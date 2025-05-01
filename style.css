@@ -1,0 +1,128 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Títulos */
+h1, h2 {
+    font-size: 2.5em;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Conteúdo */
+section {
+    padding: 20px;
+}
+
+/* Animação fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animação fadeInUp (movimento para cima) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Lista */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Ícones e marcadores */
+ul li {
+    margin: 10px 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Efeito de hover nos links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Animações de fade-in para os elementos */
+.content {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.content:nth-child(odd) {
+    animation-delay: 0.5s;
+}
+
+.content:nth-child(even) {
+    animation-delay: 1s;
+}
